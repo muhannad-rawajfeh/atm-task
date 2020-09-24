@@ -17,7 +17,7 @@ class ATMTest {
     @BeforeEach
     void setUp() {
         //TODO: initialize the atm here
-        atm = null;
+        atm = new MyAtm();
     }
 
     @Test
@@ -52,7 +52,7 @@ class ATMTest {
     }
 
     @Test
-    void givenAllFundsInAccountAreWithdrwan_whenWithdraw_shouldThrowException() {
+    void givenAllFundsInAccountAreWithdrawn_whenWithdraw_shouldThrowException() {
         atm.withdraw("222222222", new BigDecimal("500"));
         atm.withdraw("222222222", new BigDecimal("500"));
 
