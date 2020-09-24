@@ -9,6 +9,7 @@ public class MyBankingSystem implements BankingSystem {
     private final String[] ACCOUNT_NUMBERS = new String[NUMBER_OF_USERS];
     private final BigDecimal[] BALANCES = new BigDecimal[NUMBER_OF_USERS];
 
+    // TODO: use java.util.Map instead
     MyBankingSystem() {
         ACCOUNT_NUMBERS[0] = ("123456789");
         ACCOUNT_NUMBERS[1] = ("111111111");
@@ -23,6 +24,7 @@ public class MyBankingSystem implements BankingSystem {
         BALANCES[4] = (new BigDecimal(1000.0));
     }
 
+    // TODO: fix string comparison
     @Override
     public BigDecimal getAccountBalance(String accountNumber) {
 

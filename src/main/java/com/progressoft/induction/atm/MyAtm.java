@@ -7,6 +7,12 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/** TODO:
+ * access level
+ * naming convention
+ * duplication
+ */
+
 public class MyAtm implements ATM {
     private int fives = 100, tens = 100,
                 twenties = 20, fifties = 10;
