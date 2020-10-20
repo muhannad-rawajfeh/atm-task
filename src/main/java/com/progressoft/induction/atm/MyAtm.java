@@ -7,10 +7,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-/** TODO:
- * duplication
- */
-
 public class MyAtm implements ATM {
 
     private int fives = 100, tens = 100,
